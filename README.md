@@ -1,1 +1,11 @@
-# V1
+# Indra Bayu - V1
+The First iteration of my personal portfolio site built with classic HTML, simple CSS and Javascript. Hosted with github pages.
+
+Website Screenshot
+![Screenshot (287)](https://github.com/Renocalvo/V1/assets/148413375/a92024bc-5cde-4632-b220-df6fa7fd77a5)
+
+
+# What I used
+1. Visual Studio Code my ride-or-die
+2. Unsplash for stock photos
+3. Aos.js for animation while scrolling effect
