@@ -21,7 +21,7 @@ function downloadCV() {
   
   // Menetapkan atribut unduhan dan href
   tempLink.setAttribute('href', '/Contoh-resume.pdf'); // Gantilah dengan path yang sesuai
-  tempLink.setAttribute('download', 'Contoh-resume.pdf'); // Gantilah dengan nama file yang sesuai
+  tempLink.setAttribute('download', '/Contoh-resume.pdf'); // Gantilah dengan nama file yang sesuai
 
   // Menambahkan elemen ke dokumen
   document.body.appendChild(tempLink);
