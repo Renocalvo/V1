@@ -8,4 +8,5 @@ Website Screenshot
 # What I used
 1. Visual Studio Code my ride-or-die
 2. Unsplash for stock photos
-3. Aos.js for animation while scrolling effect
+3. [Aos.js](https://unpkg.com/scrollreveal) for animation while scrolling effect
+4. [unicons.com](https://unicons.iconscout.com/release/v4.0.8/css/line.css) for icon i used in this web
