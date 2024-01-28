@@ -858,14 +858,15 @@ footer {
 }
 
 
-/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
+/* ----- MEDIA QUERY Height == 1024px / RESPONSIVE ----- */
 /* --- Height --- */
-@media only screen and (max-height: 800px){
+@media only screen and (max-height: 740px){
     .scroll-btn{
         display: none;
     }
 }
 
+/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 /* --- Witdh --- */
 @media only screen and (max-width: 1024px) {
     nav{
