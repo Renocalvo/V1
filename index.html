@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="\assets\style\style.css">
 
     <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="logo brand.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo brand.png" type="image/x-icon">
 
     <title>Portfolio | Indra Bayu</title>
 </head>
@@ -22,7 +22,7 @@
         <!-- --------------- HEADER --------------- -->
         <nav id="header">
             <div class="nav-logo">
-                <img src="logo brand.png" alt="logo" class="nav-brand">
+                <img src="assets/img/logo brand.png" alt="logo" class="nav-brand">
                 <p class="nav-name">Indra</p>
                 <span>.</span>
             </div>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="featured-image">
                     <div class="image">
-                        <img src="avatar.png" alt="avatar">
+                        <img src="assets/img/avatar.png" alt="avatar">
                     </div>
                 </div>
                 <div class="scroll-icon-box">
@@ -161,7 +161,7 @@
 
             <!-- Skills & Education -->
             <section id="Education">
-                <div class="skills main-container">
+                <div class="skills-main-container">
                     <div class="top-header">
                         <h1>Learning Path</h1>
                     </div>
@@ -202,30 +202,29 @@
                         </div>
 
                         <div class="skills-right">
-                            <p>
-                                For 5+ years, I have been continuously learning in the field of
-                                front-end and experimenting with new technologies and frameworks,
-                                and here you can see a summary of my skills. Field of front-end
-                                and experimenting with new technologies.
-                            </p>
-
-                            <div class="skills-list2">
-                                <ul>
-                                    <li>React JS</li>
-                                    <li>Node JS</li>
-                                    <li>MongoDB</li>
-                                    <li>HTML</li>
-                                    <li>Vue JS</li>
-                                </ul>
-
-                                <ul>
-                                    <li>CSS</li>
-                                    <li>Typescript</li>
-                                    <li>Next JS</li>
-                                    <li>GraphQl</li>
-                                    <li>Angular JS</li>
-                                </ul>
-                            </div>
+                                <p>
+                                    For 5+ years, I have been continuously learning in the field of
+                                    front-end and experimenting with new technologies and frameworks,
+                                    and here you can see a summary of my skills. Field of front-end
+                                    and experimenting with new technologies.
+                                </p>
+                                <div class="skills-list2">
+                                    <ul>
+                                        <li>React JS</li>
+                                        <li>Node JS</li>
+                                        <li>MongoDB</li>
+                                        <li>HTML</li>
+                                        <li>Vue JS</li>
+                                    </ul>
+    
+                                    <ul>
+                                        <li>CSS</li>
+                                        <li>Typescript</li>
+                                        <li>Next JS</li>
+                                        <li>GraphQl</li>
+                                        <li>Angular JS</li>
+                                    </ul>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -267,7 +266,7 @@
                       <div class="portfolio">
                         <div class="portfolio-cover">
                           <img
-                            src="./portofolios/portfolio-1.png"
+                            src="/assets/img/portofolios/portfolio-1.png"
                             alt="Portfolio 1"
                           />
                         </div>
@@ -303,7 +302,7 @@
                       <div class="portfolio">
                         <div class="portfolio-cover">
                           <img
-                            src="./portofolios/portfolio-2.png"
+                            src="/assets/img/portofolios/portfolio-2.png"
                             alt="Portfolio 1"
                           />
                         </div>
@@ -339,7 +338,7 @@
                       <div class="portfolio">
                         <div class="portfolio-cover">
                           <img
-                            src="./portofolios/portfolio-3.jpeg"
+                            src="/assets/img/portofolios/portfolio-3.jpeg"
                             alt="Portfolio 1"
                           />
                         </div>
@@ -385,23 +384,42 @@
                     <div class="col">
                         <div class="contact-info">
                             <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                            <p><i class="uil uil-envelope"></i> Email: givingmesomehugeT-T@gmail.com</p>
+                            <p><i class="uil uil-envelope"></i> Email: 1234567890gmail.com</p>
                             <p><i class="uil uil-phone"></i> Tel: +82 9999 9999 999</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-control">
-                            <div class="form-inputs">
-                                <input type="text" class="input-field" placeholder="Name">
-                                <input type="text" class="input-field" placeholder="Email">
-                            </div>
-                            <div class="text-area">
-                                <textarea placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-button">
-                                <button class="btn">Send <i class="uil uil-message"></i></button>
-                            </div>
-                        </div>
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="row">
+                                  <div class="col">
+                                    <div class="form-inputs">
+                                        <input type="text" name="name" class="input-field" id="name" placeholder="Your Name" required>
+                                    </div>
+                                  </div>
+                                  <div class="col">
+                                    <div class="form-inputs">
+                                        <input type="email" class="input-field" name="email" id="email" placeholder="Your Email" required>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="form-inputs">
+                                  <input type="text" class="input-field" name="subject" id="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-message">
+                                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                </div>
+                                <div class="my-3">
+                                  <div class="loading">Loading</div>
+                                  <div class="error-message"></div>
+                                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                                </div>
+                                <div class="form-button">
+                                    <button type="submit" class="contact-btn"><a href="mailto:indrabayu210903@gmail.com">Send <i class="uil uil-message"></i></a></i></button>
+                                </div>
+                            </form>
+                        </div>  
                     </div>
                 </div>
             </section>
@@ -457,7 +475,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- ----- MAIN JS ----- -->
-    <script src="script.js"></script>
+    <script src="/assets/script/script.js"></script>
 </body>
 
 </html>
