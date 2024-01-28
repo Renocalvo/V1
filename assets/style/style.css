@@ -729,7 +729,7 @@ textarea {
     resize: none;
 }
 
-.form-button>.contact-btn{ 
+.contact-btn{ 
     margin-top: 10px;
     font-weight: 500;
     padding: 12px 20px;
@@ -744,21 +744,22 @@ textarea {
     background: var(--second-color);
     
 }
+
+.contact-btn:hover {
+    background: #00B5E7;
+    
+}
 .form-button a{
     color: var(--color-white);
     text-decoration: none;
 }
-.form-button>.contact-btn:hover {
-    background: #00B5E7;
-    
-}
 
-
-.form-control> i{
+.form-button i{
     color: var(--color-white);
     font-size: 18px;
-    rotate: -45deg;
-}
+    transform: rotate(-45deg);
+  }
+
 .form-control .php-email-form .error-message {
     display: none;
     color: #fff;
