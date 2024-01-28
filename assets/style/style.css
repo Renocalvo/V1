@@ -860,7 +860,7 @@ footer {
 
 /* ----- MEDIA QUERY Height == 1024px / RESPONSIVE ----- */
 /* --- Height --- */
-@media only screen and (max-height: 740px){
+@media only screen and (max-height: 700px){
     .scroll-btn{
         display: none;
     }
